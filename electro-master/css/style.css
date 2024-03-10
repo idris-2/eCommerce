@@ -295,6 +295,10 @@ textarea.input {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+.section-bottom-specific {
+  padding-top: 30px;
+  padding-bottom: 75px;
+}
 
 .section-title {
   position: relative;
