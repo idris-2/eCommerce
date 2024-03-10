@@ -28,7 +28,9 @@
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
 		<!-- Custom payment css -->
-		<link rel="stylesheet" href="css/payment.css">
+		<link rel="stylesheet" type="text/css" href="css/payment.css">
+		<link rel="stylesheet" type="text/css" href="css/modal-fix.css">
+
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,9 +47,7 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
 						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
@@ -79,8 +79,10 @@
 								<form>
 									<select class="input-select">
 										<option value="0">All Categories</option>
-										<option value="1">Category 01</option>
-										<option value="1">Category 02</option>
+										<option value="1">Laptops</option>
+										<option value="2">Phones</option>
+										<option value="3">Arduino</option>
+										<option value="4">Raspberry Pi</option>
 									</select>
 									<input class="input" placeholder="Search here">
 									<button class="search-btn">Search</button>
@@ -92,7 +94,9 @@
 						<!-- ACCOUNT -->
 						<div class="col-md-3 clearfix">
 							<div class="header-ctn">
-								<!-- Wishlist -->
+<!--								
+								MIGHT ADD WISHLIST LATER
+								
 								<div>
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
@@ -100,8 +104,9 @@
 										<div class="qty">2</div>
 									</a>
 								</div>
-								<!-- /Wishlist -->
 
+								MIGHT ADD WISHLIST LATER
+-->
 								<!-- Cart -->
 								<div class="dropdown">
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
@@ -116,7 +121,7 @@
 													<img src="./img/product01.png" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h3 class="product-name"><a href="#">Laptop Macbook</a></h3>
 													<h4 class="product-price"><span class="qty">1x</span>$980.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
@@ -127,7 +132,7 @@
 													<img src="./img/product02.png" alt="">
 												</div>
 												<div class="product-body">
-													<h3 class="product-name"><a href="#">product name goes here</a></h3>
+													<h3 class="product-name"><a href="#">Iphone 15</a></h3>
 													<h4 class="product-price"><span class="qty">3x</span>$980.00</h4>
 												</div>
 												<button class="delete"><i class="fa fa-close"></i></button>
@@ -173,13 +178,10 @@
 				<div id="responsive-nav">
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Home</a></li>
 						<li><a href="#">Hot Deals</a></li>
-						<li><a href="#">Categories</a></li>
-						<li><a href="#">Laptops</a></li>
-						<li><a href="#">Smartphones</a></li>
-						<li><a href="#">Cameras</a></li>
-						<li><a href="#">Accessories</a></li>
+						<li><a href="#">New items</a></li>
+						<li><a href="#">Beginner picks</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>
@@ -189,11 +191,13 @@
 		</nav>
 		<!-- /NAVIGATION -->
 
-		<!-- BREADCRUMB -->
+<!--
+		MAYBE LATER IF I HAVE THE TIME
+
 		<div id="breadcrumb" class="section">
-			<!-- container -->
+			container
 			<div class="container">
-				<!-- row -->
+				row
 				<div class="row">
 					<div class="col-md-12">
 						<h3 class="breadcrumb-header">Checkout</h3>
@@ -203,11 +207,13 @@
 						</ul>
 					</div>
 				</div>
-				<!-- /row -->
+				row
 			</div>
-			<!-- /container -->
+			container
 		</div>
-		<!-- /BREADCRUMB -->
+
+		MAYBE LATER IF I HAVE THE TIME
+-->
 
 		<!-- SECTION -->
 		<div class="section">
@@ -254,7 +260,7 @@
 										Create Account?
 									</label>
 									<div class="caption">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+										<p>Please enter the password you wish to use for your account.</p>
 										<input class="input" type="password" name="password" placeholder="Enter Your Password">
 									</div>
 								</div>
@@ -274,12 +280,6 @@
 									Ship to a diffrent address?
 								</label>
 								<div class="caption">
-									<div class="form-group">
-										<input class="input" type="text" name="first-name" placeholder="First Name">
-									</div>
-									<div class="form-group">
-										<input class="input" type="text" name="last-name" placeholder="Last Name">
-									</div>
 									<div class="form-group">
 										<input class="input" type="email" name="email" placeholder="Email">
 									</div>
@@ -305,6 +305,9 @@
 
 						<!-- Order notes -->
 						<div class="order-notes">
+							<div class="section-title">
+								<h3 class="title">Anything we need to know?</h3>
+							</div>
 							<textarea class="input" placeholder="Order Notes"></textarea>
 						</div>
 						<!-- /Order notes -->
@@ -322,11 +325,11 @@
 							</div>
 							<div class="order-products">
 								<div class="order-col">
-									<div>1x Product Name Goes Here</div>
+									<div>Laptop Macbook</div>
 									<div>$980.00</div>
 								</div>
 								<div class="order-col">
-									<div>2x Product Name Goes Here</div>
+									<div>Iphone 15</div>
 									<div>$980.00</div>
 								</div>
 							</div>
@@ -339,42 +342,74 @@
 								<div><strong class="order-total">$2940.00</strong></div>
 							</div>
 						</div>
-						<div class="input-radio">
-							<input type="radio" name="payment" id="payment-4">
-							<label for="payment-4">
-								<span></span>
-								Card Payment
-							</label>
-							<div class="caption">
-								<div class="form-fields">
-									<div class="form-field">
-										<label for="card-number">Card Number:</label>
-										<input type="text" id="card-number" name="card-number" required>
-									</div>
-									<div class="form-field">
-										<label for="cvv">CVV:</label>
-										<input type="text" id="cvv" name="cvv" required>
-									</div>
-									<div class="form-field">
-										<label for="card-holder-name">Name and Surname of Card Holder:</label>
-										<input type="text" id="card-holder-name" name="card-holder-name" required>
-									</div>
-									<div class="form-field">
-										<label for="exp-date">Expiration Date:</label>
-										<input type="text" id="exp-date" name="exp-date" placeholder="MM/YYYY" required>
-									</div>
-								</div>
-							</div>
-						</div>
 						
 						<div class="input-checkbox">
 							<input type="checkbox" id="terms">
 							<label for="terms">
 								<span></span>
 								I've read and accept the <a href="#">terms & conditions</a>
+								(before proceeding, please double check your shipping information)
 							</label>
 						</div>
-						<a href="#" class="primary-btn order-submit">Place order</a>
+	
+						<!-- PAYMENT BEGINING RIGHT HERE -->
+						<button type="button" class="primary-btn order-submit" id="showPaymentForm"> <i class="fa fa-rocket"></i> Pay Now </button>
+						<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<div class="text-right">
+											<i class="fa fa-close close" data-dismiss="modal"></i>
+										</div>
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-12 col-md-6 col-md-offset-4">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<div class="row">
+																<h3 class="text-center">Payment Details</h3>
+																<div class="inlineimage"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Discover-Curved.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Visa-Straight.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/American-Express-Curved.png"> </div>
+															</div>
+														</div>
+														<div class="panel-body">
+															<form role="form">
+																<div class="row">
+																	<div class="col-xs-12">
+																		<div class="form-group"> <label>CARD NUMBER</label>
+																			<div class="input-group"> <input type="tel" class="form-control" placeholder="Valid Card Number" /> <span class="input-group-addon"><span class="fa fa-credit-card"></span></span> </div>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-7 col-md-7">
+																		<div class="form-group"> <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label> <input type="tel" class="form-control" placeholder="MM / YY" /> </div>
+																	</div>
+																	<div class="col-xs-5 col-md-5 pull-right">
+																		<div class="form-group"> <label>CV CODE</label> <input type="tel" class="form-control" placeholder="CVC" /> </div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12">
+																		<div class="form-group"> <label>CARD OWNER</label> <input type="text" class="form-control" placeholder="Card Owner Name" /> </div>
+																	</div>
+																</div>
+															</form>
+														</div>
+														<div class="panel-footer">
+															<div class="row">
+																<div class="col-xs-12"> <button class="btn btn-success btn-lg btn-block">Confirm Payment</button> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- PAYMENT END RIGHT HERE -->
 					</div>
 					<!-- /Order Details -->
 				</div>
@@ -384,11 +419,13 @@
 		</div>
 		<!-- /SECTION -->
 
-		<!-- NEWSLETTER -->
+<!--
+		NEWSLETTER, AGAIN MIGHT DO LATER IF MORE TIME
+
 		<div id="newsletter" class="section">
-			<!-- container -->
+			container
 			<div class="container">
-				<!-- row -->
+				row
 				<div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
@@ -414,11 +451,14 @@
 						</div>
 					</div>
 				</div>
-				<!-- /row -->
+				row
 			</div>
-			<!-- /container -->
+			container
 		</div>
-		<!-- /NEWSLETTER -->
+
+		NEWSLETTER, AGAIN MIGHT DO LATER IF MORE TIME
+
+-->
 
 		<!-- FOOTER -->
 		<footer id="footer">
@@ -431,10 +471,8 @@
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+								<p>Welcome to Technify, where we wish to get you started and engauge you into the tech world. If you require any more information or have any questions about our site, please feel free to contact us by email at: </p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
 									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
 								</ul>
 							</div>
@@ -445,10 +483,8 @@
 								<h3 class="footer-title">Categories</h3>
 								<ul class="footer-links">
 									<li><a href="#">Hot deals</a></li>
-									<li><a href="#">Laptops</a></li>
-									<li><a href="#">Smartphones</a></li>
-									<li><a href="#">Cameras</a></li>
-									<li><a href="#">Accessories</a></li>
+									<li><a href="#">New items</a></li>
+									<li><a href="#">Beginner picks</a></li>
 								</ul>
 							</div>
 						</div>
@@ -459,8 +495,6 @@
 							<div class="footer">
 								<h3 class="footer-title">Information</h3>
 								<ul class="footer-links">
-									<li><a href="#">About Us</a></li>
-									<li><a href="#">Contact Us</a></li>
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Orders and Returns</a></li>
 									<li><a href="#">Terms & Conditions</a></li>
@@ -475,8 +509,6 @@
 									<li><a href="#">My Account</a></li>
 									<li><a href="#">View Cart</a></li>
 									<li><a href="#">Wishlist</a></li>
-									<li><a href="#">Track My Order</a></li>
-									<li><a href="#">Help</a></li>
 								</ul>
 							</div>
 						</div>
@@ -523,6 +555,14 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+
+		<!-- Custom payment script -->
+		<script>
+			document.getElementById('showPaymentForm').addEventListener('click', function() {
+				$('#paymentModal').modal('show');
+			});
+		</script>
+
 
 	</body>
 </html>
