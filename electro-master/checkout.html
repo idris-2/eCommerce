@@ -27,6 +27,9 @@
  		<!-- Custom stlylesheet -->
  		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
+		<!-- Custom payment css -->
+		<link rel="stylesheet" href="css/payment.css">
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -336,38 +339,34 @@
 								<div><strong class="order-total">$2940.00</strong></div>
 							</div>
 						</div>
-						<div class="payment-method">
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-1">
-								<label for="payment-1">
-									<span></span>
-									Direct Bank Transfer
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-2">
-								<label for="payment-2">
-									<span></span>
-									Cheque Payment
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-								</div>
-							</div>
-							<div class="input-radio">
-								<input type="radio" name="payment" id="payment-3">
-								<label for="payment-3">
-									<span></span>
-									Paypal System
-								</label>
-								<div class="caption">
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<div class="input-radio">
+							<input type="radio" name="payment" id="payment-4">
+							<label for="payment-4">
+								<span></span>
+								Card Payment
+							</label>
+							<div class="caption">
+								<div class="form-fields">
+									<div class="form-field">
+										<label for="card-number">Card Number:</label>
+										<input type="text" id="card-number" name="card-number" required>
+									</div>
+									<div class="form-field">
+										<label for="cvv">CVV:</label>
+										<input type="text" id="cvv" name="cvv" required>
+									</div>
+									<div class="form-field">
+										<label for="card-holder-name">Name and Surname of Card Holder:</label>
+										<input type="text" id="card-holder-name" name="card-holder-name" required>
+									</div>
+									<div class="form-field">
+										<label for="exp-date">Expiration Date:</label>
+										<input type="text" id="exp-date" name="exp-date" placeholder="MM/YYYY" required>
+									</div>
 								</div>
 							</div>
 						</div>
+						
 						<div class="input-checkbox">
 							<input type="checkbox" id="terms">
 							<label for="terms">

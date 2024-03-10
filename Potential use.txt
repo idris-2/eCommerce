@@ -11,3 +11,8 @@ https://themewagon.com/themes/free-bootstrap-4-html5-responsive-ecommerce-websit
 
 getting used:
 https://themewagon.com/themes/free-bootstrap-ecommerce-template-electro/
+
+
+tools:
+https://getbootstrap.com/
+https://fontawesome.com/
