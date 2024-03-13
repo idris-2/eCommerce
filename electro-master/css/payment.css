@@ -1,0 +1,47 @@
+/* payment.css */
+
+.inlineimage {
+    max-width: 470px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.images {
+    display: inline-block;
+    max-width: 98%;
+    height: 22%;
+    width: 22%;
+    margin: 1%;
+    left: 0px;
+    text-align: center;
+}
+
+/* New CSS for hiding the payment form */
+#paymentForm.hidden {
+    display: none;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for scrollbar width */
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: auto;
+}
+
+/* MODAL FIX */
+.panel-default {
+    width: 90%; /* Adjust this value as needed */
+    max-width: 500px;
+    transform: translateX(-74%); /* This centers the box horizontally */
+}
