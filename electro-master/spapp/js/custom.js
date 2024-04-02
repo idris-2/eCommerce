@@ -1,14 +1,12 @@
 $(document).ready(function() {
-  console.log("Hello from main index file bitch!")
-
-  $("main#spapp > section").height($(document).height() - 60);
-
+  console.log("Hello from main index file flowers!")
 
   var app = $.spapp({
-    defaultView  : "",
+    defaultView  : "#",
     templateDir  : "./pages/",
-    pageNotFound : "#blank"
+    pageNotFound : "blank"
   });
+
   
   app.route({
     view : "home",
@@ -33,9 +31,7 @@ $(document).ready(function() {
 
   app.route({
     view : "product",
-    load : "product.html",
-    onCreate: function() {  },
-    onReady: function() {  }
+    load : "product.html"
   });
 
   app.route({
