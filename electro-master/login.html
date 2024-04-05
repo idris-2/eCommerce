@@ -46,8 +46,6 @@
 			<!-- container -->
 			<div class="container">
 				
-				<!-- style="float: right; width: 73%;"-->
-
 					<div class ="row">
 						<div class="col-md-6 mx-auto p-0">
 							<div class="card">
@@ -120,94 +118,6 @@
 		</div>
 		<!-- /SECTION -->
 
-		<!-- FOOTER -->
-		<footer id="footer">
-			<!-- top footer -->
-			<div class="section">
-				<!-- container -->
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">About Us</h3>
-								<p>Welcome to Technify, where we wish to get you started and engauge you into the tech world. If you require any more information or have any questions about our site, please feel free to contact us by email at: </p>
-								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Categories</h3>
-								<ul class="footer-links">
-									<li><a href="store.html">Hot deals</a></li>
-									<li><a href="store.html">New items</a></li>
-									<li><a href="store.html">Beginner picks</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="clearfix visible-xs"></div>
-
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Information</h3>
-								<ul class="footer-links">
-									<li><a href="https://colorlib.com/wp/privacy-policy/">Privacy Policy</a></li>
-									<li><a href="#">Orders and Returns</a></li>
-									<li><a href="https://colorlib.com/wp/terms-conditions/">Terms & Conditions</a></li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="col-md-3 col-xs-6">
-							<div class="footer">
-								<h3 class="footer-title">Service</h3>
-								<ul class="footer-links">
-									<li><a href="login.html">My Account</a></li>
-									<li><a href="checkout.html">View Cart</a></li>
-									<li><a href="#">Wishlist</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- /row -->
-				</div>
-				<!-- /container -->
-			</div>
-			<!-- /top footer -->
-
-			<!-- bottom footer -->
-			<div id="bottom-footer" class="section">
-				<div class="container">
-					<!-- row -->
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<ul class="footer-payments">
-								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
-								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-discover"></i></a></li>
-								<li><a href="#"><i class="fa fa-cc-amex"></i></a></li>
-							</ul>
-							<span class="copyright">
-								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-								Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-							<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-							</span>
-						</div>
-					</div>
-						<!-- /row -->
-				</div>
-				<!-- /container -->
-			</div>
-			<!-- /bottom footer -->
-		</footer>
-		<!-- /FOOTER -->
-
 		<!-- jQuery Plugins -->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -215,34 +125,6 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
-
-		<script>
-			function submitForm() {
-				var username = $("#username").val();
-				var password = $("#password").val();
-	
-				var formData = {
-					username: username,
-					password: password
-				};
-	
-				// Send the data to the server using AJAX
-				$.ajax({
-					type: "POST",
-					url: "json/users.json",
-					data: JSON.stringify(formData),
-					contentType: "application/json",
-					success: function(response) {
-						console.log("Data saved successfully:", response);
-					
-					},
-					error: function(xhr, status, error) {
-						console.error("Error saving data:", error);
-				
-					}
-				});
-			}
-		</script>
 
 	</body>
 </html>

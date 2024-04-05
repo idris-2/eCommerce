@@ -2,7 +2,7 @@ $(document).ready(function() {
   console.log("Hello from main index file flowers!")
 
   var app = $.spapp({
-    defaultView  : "#",
+    defaultView  : "#home",
     templateDir  : "./pages/",
     pageNotFound : "blank"
   });
@@ -31,7 +31,9 @@ $(document).ready(function() {
 
   app.route({
     view : "product",
-    load : "product.html"
+    load : "product.html",
+    onCreate: function() {  },
+    onReady: function() {  }
   });
 
   app.route({
