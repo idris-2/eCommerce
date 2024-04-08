@@ -1,0 +1,222 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="css/payment.css">
+	<link rel="stylesheet" type="text/css" href="css/modal-fix.css">
+</head>
+<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<div class="col-md-7">
+						<!-- Billing Details -->
+						<div class="billing-details">
+							<div class="section-title">
+								<h3 class="title">Billing address</h3>
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="first-name" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="last-name" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input class="input" type="email" name="email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="address" placeholder="Address">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="city" placeholder="City">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="country" placeholder="Country">
+							</div>
+							<div class="form-group">
+								<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+							</div>
+							<div class="form-group">
+								<input class="input" type="tel" name="tel" placeholder="Telephone">
+							</div>
+							<div class="form-group">
+								<div class="input-checkbox">
+									<input type="checkbox" id="create-account">
+									<label for="create-account">
+										<span></span>
+										Create Account?
+									</label>
+									<div class="caption">
+										<p>Please enter the password you wish to use for your account.</p>
+										<input class="input" type="password" name="password" placeholder="Enter Your Password">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Billing Details -->
+
+						<!-- Shiping Details -->
+						<div class="shiping-details">
+							<div class="section-title">
+								<h3 class="title">Shiping address</h3>
+							</div>
+							<div class="input-checkbox">
+								<input type="checkbox" id="shiping-address">
+								<label for="shiping-address">
+									<span></span>
+									Ship to a diffrent address?
+								</label>
+								<div class="caption">
+									<div class="form-group">
+										<input class="input" type="email" name="email" placeholder="Email">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="address" placeholder="Address">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="city" placeholder="City">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="country" placeholder="Country">
+									</div>
+									<div class="form-group">
+										<input class="input" type="text" name="zip-code" placeholder="ZIP Code">
+									</div>
+									<div class="form-group">
+										<input class="input" type="tel" name="tel" placeholder="Telephone">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Shiping Details -->
+
+						<!-- Order notes -->
+						<div class="order-notes">
+							<div class="section-title">
+								<h3 class="title">Anything we need to know?</h3>
+							</div>
+							<textarea class="input" placeholder="Order Notes"></textarea>
+						</div>
+						<!-- /Order notes -->
+					</div>
+
+					<!-- Order Details -->
+					<div class="col-md-5 order-details">
+						<div class="section-title text-center">
+							<h3 class="title">Your Order</h3>
+						</div>
+						<div class="order-summary">
+							<div class="order-col">
+								<div><strong>PRODUCT</strong></div>
+								<div><strong>TOTAL</strong></div>
+							</div>
+							<div class="order-products">
+								<div class="order-col">
+									<div>Laptop Macbook</div>
+									<div>$980.00</div>
+								</div>
+								<div class="order-col">
+									<div>Iphone 15</div>
+									<div>$980.00</div>
+								</div>
+							</div>
+							<div class="order-col">
+								<div>Shiping</div>
+								<div><strong>FREE</strong></div>
+							</div>
+							<div class="order-col">
+								<div><strong>TOTAL</strong></div>
+								<div><strong class="order-total">$2940.00</strong></div>
+							</div>
+						</div>
+						
+						<div class="input-checkbox">
+							<input type="checkbox" id="terms">
+							<label for="terms">
+								<span></span>
+								I've read and accept the <a href="https://colorlib.com/wp/terms-conditions/">terms & conditions</a>
+								(before proceeding, please double check your shipping information)
+							</label>
+						</div>
+	
+						<!-- PAYMENT BEGINING RIGHT HERE -->
+						<button type="button" class="primary-btn order-submit" id="showPaymentForm"> <i class="fa fa-rocket"></i> Pay Now </button>
+						<div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-body">
+										<div class="text-right">
+											<i class="fa fa-close close" data-dismiss="modal"></i>
+										</div>
+										<div class="container">
+											<div class="row">
+												<div class="col-xs-12 col-md-6 col-md-offset-4">
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<div class="row">
+																<h3 class="text-center">Payment Details</h3>
+																<div class="inlineimage"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Mastercard-Curved.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Discover-Curved.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/Visa-Straight.png"> <img class="img-responsive images" src="https://cdn0.iconfinder.com/data/icons/credit-card-debit-card-payment-PNG/128/American-Express-Curved.png"> </div>
+															</div>
+														</div>
+														<div class="panel-body">
+															<form role="form">
+																<div class="row">
+																	<div class="col-xs-12">
+																		<div class="form-group"> <label>CARD NUMBER</label>
+																			<div class="input-group"> <input type="tel" class="form-control" placeholder="Valid Card Number" /> <span class="input-group-addon"><span class="fa fa-credit-card"></span></span> </div>
+																		</div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-7 col-md-7">
+																		<div class="form-group"> <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label> <input type="tel" class="form-control" placeholder="MM / YY" /> </div>
+																	</div>
+																	<div class="col-xs-5 col-md-5 pull-right">
+																		<div class="form-group"> <label>CV CODE</label> <input type="tel" class="form-control" placeholder="CVC" /> </div>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col-xs-12">
+																		<div class="form-group"> <label>CARD OWNER</label> <input type="text" class="form-control" placeholder="Card Owner Name" /> </div>
+																	</div>
+																</div>
+															</form>
+														</div>
+														<div class="panel-footer">
+															<div class="row">
+																<div class="col-xs-12"> <button class="btn btn-success btn-lg btn-block">Confirm Payment</button> </div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- PAYMENT END RIGHT HERE -->
+					</div>
+					<!-- /Order Details -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+
+		<!-- jQuery Plugins -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- Custom payment script -->
+		<script>
+			document.getElementById('showPaymentForm').addEventListener('click', function() {
+				$('#paymentModal').modal('show');
+			});
+		</script>
