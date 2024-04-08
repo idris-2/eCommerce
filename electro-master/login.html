@@ -54,7 +54,7 @@
 							<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
 							<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
 							<div class="login-space">
-								<div class="login">
+								<div class="login" id="loginForm">
 									<div class="group">
 										<label for="user" class="label" style="text-align: left;">Username</label>
 										<input id="user" type="text" class="input"  placeholder="Enter your username">
@@ -80,18 +80,18 @@
 									</div>
 								</div>
 
-								<div class="sign-up-form">
+								<div class="sign-up-form" id="registrationForm">
 									<div class="group">
 										<label for="user" class="label" style="text-align: left;">Username</label>
-										<input id="user" type="text" class="input" placeholder="Create your Username">
+										<input id="username" type="text" class="input" placeholder="Create your Username">
 									</div>
 									<div class="group">
 										<label for="pass" class="label" style="text-align: left;">Email Address</label>
-										<input id="pass" type="text" class="input" placeholder="Enter your email address">
+										<input id="email" type="text" class="input" placeholder="Enter your email address">
 									</div>
 									<div class="group">
 										<label for="pass" class="label" style="text-align: left;">Password</label>
-										<input id="pass" type="password" class="input" data-type="password" placeholder="Create your password">
+										<input id="password" type="password" class="input" data-type="password" placeholder="Create your password">
 									</div>
 									<div class="group">
 										<input type="submit" class="button" value="Sign Up">
@@ -125,6 +125,9 @@
 		<script src="js/nouislider.min.js"></script>
 		<script src="js/jquery.zoom.min.js"></script>
 		<script src="js/main.js"></script>
+
+		<script src="services/register.js"></script>
+		<script src="services/login.js"></script>
 
 	</body>
 </html>
