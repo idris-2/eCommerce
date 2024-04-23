@@ -265,9 +265,23 @@ color: #b3b3b3;
   }
 }
 
+@media (min-width: 818px){
+	[class*='col-md'] {
+		width: 85%;
+		float: right;
+	  }
+}
+
 @media (min-width: 992px){
 	[class*='col-md'] {
 		width: 74%;
+		float: right;
+	  }
+}
+
+@media (max-width: 538px){
+	[class*='col-md'] {
+		width: 99%;
 		float: right;
 	  }
 }
