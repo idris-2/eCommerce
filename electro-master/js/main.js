@@ -129,7 +129,7 @@
 			priceInputMin = document.getElementById('price-min');
 
 	// Add event listeners only if the elements exist
-	
+	if (priceInputMax && priceInputMin) {
     	priceInputMax.addEventListener('change', function(){
         	updatePriceSlider($(this).parent() , this.value)
     });
@@ -137,6 +137,7 @@
     priceInputMin.addEventListener('change', function(){
         updatePriceSlider($(this).parent() , this.value)
     });
+}
 
 
 	function updatePriceSlider(elem , value) {
